@@ -1,0 +1,1 @@
+- Plotting the parent entity and the entities that it owns in a graph where each node is the entity drawn at its location and connected to the parent.

@@ -1,1 +1,61 @@
 - Plotting the parent entity and the entities that it owns in a graph where each node is the entity drawn at its location and connected to the parent.
+
+- To Scrape:
+    Twitter:
+    # posts
+    # following
+    # follower
+    join date
+    in last X posts:
+        # likes
+        # reposts
+        # comments
+        # views
+        timestamp
+        has hidden replies
+
+    Facebook:
+    # following
+    # followers
+    # reviews
+    rating
+    in last X posts:
+        # reactions
+        # comments
+        # reposts
+        timestamp
+
+    Instagram:
+    # posts
+    # followers
+    # following
+    in last X posts
+        # likes
+        # comments
+        timestamp
+
+    Threads:
+    # followers
+    in last X posts:
+        # likes
+        # comments
+        # reposts
+        timestamp
+
+    Youtube:
+    # followers
+    # videos
+    in last X videos:
+        # views
+        # likes
+        timestamp
+        tags
+
+    Tiktok:
+    # followers
+    # following
+    # likes
+    in last X videos
+        # views
+        # likes
+        timestamp

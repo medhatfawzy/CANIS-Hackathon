@@ -1,3 +1,5 @@
+import os 
+
 import numpy as np
 import pandas as pd
 
@@ -125,9 +127,6 @@ for node in G.nodes:
                                          .iloc[0])) + 10
 
 
-canis_data_js = ColumnDataSource(canis_data)
-div = Div(width=500)
-
 # Create Holoviews graph and add URLs as hover information
 hv_graph = hv.Graph.from_networkx(G, net_layout)
 
@@ -164,13 +163,11 @@ label_callback = CustomJS(args=dict(labels=plot.renderers[-1]), code=f"""
 
 
 
-
 plot.add_tools(TapTool(callback=OpenURL(url='@url'))) 
 plot.js_on_event(DoubleTap, label_callback)
-# plot.js_on_event(Tap, div_callback)
 
 
-show_layout = row(plot, div)
+show_layout = column(row(plot))
 
 # Display the plot
 curdoc().add_root(show_layout)
